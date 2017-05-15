@@ -1,0 +1,53 @@
+
+  body {
+    background-image: url(../images/brickwall.png);
+    
+  }
+
+  .chosen-letters{
+    float: left;
+    text-decoration: underline;
+
+
+  }
+
+  .jumbotron{
+    color: black;
+  }
+ 
+  
+  .letter {
+    width: 30px;
+    height: 30px;
+    border-style: solid;
+    padding: 2px;
+    float: left;
+    margin: 2px;
+  }
+  
+  .letter-button-color {
+    color: blue;
+  }
+  
+  .fridge-color {
+    color: black;
+  }
+  
+  #display {
+    margin-top: 78px;
+    /*height: 500px;*/
+    /*width: 200px; */
+    margin-left: 10px;
+  }
+  
+  #buttons {
+    padding-top: 60px;
+  }
+  
+  #clear {
+    margin-left: 20px;
+    font-size: 15px;
+    color: blue;
+    border-style: solid;
+    width: 80px;
+  }

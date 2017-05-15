@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hangman  Game</title>
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets\css\style.css">
+  
+</head>
+
+<body>
+
+<div class="row">
+
+        <div class="col-sm-8">
+          <div class="jumbotron">
+            <div class="container">
+            <h1>Welcome to Hangman!</h1> 
+            <br> 
+            <h2>Board Games Edition</h2>
+            <hr>
+            <h3>Press any key to start</h3>
+            </div>
+          </div>     
+        </div>
+
+<!--right side bar - letters guessed -->
+    <div class="right-side">
+        <div class="col-sm-4">
+            
+            <h3> Invalid Letters Guessed </h3> 
+            <br> 
+            <hr>
+            <h3 id="invalid-guesses"></h3>
+        </div>
+       </div> 
+   </div>
+  <div class="container">
+
+        <div><h3 id="blank-word"></h3>
+        <br>
+        <div>Remaining Guesses: <p id="allowed-guess"></p></div>
+        <div>Wins: <p id="wins"></p></div>
+        <div>Losses: <p id="losses"></p></div>
+        <button id="clear">reset</button>  
+      </div>
+      </div>
+      <script src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
+
+
