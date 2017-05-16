@@ -109,7 +109,7 @@
           
   function roundComplete(){
     
-//Push values to appropriate DIV
+  //Push values to appropriate DIV
     document.getElementById("blank-word").innerHTML = validGuesses.join(" ");
     document.getElementById("allowed-guess").innerHTML = remainingGuesses;
     document.getElementById("invalid-guesses").innerHTML = invalidGuesses.join(" ");
@@ -119,13 +119,15 @@
     //Compare the letters pressed with the randomly generated number
     if(wordLetters.join(" ") === validGuesses.join(" ")){
         counterWins++;
-        alert("You won!!");
-        document.getElementById('wins').innerHTML = counterWins;
+        document.getElementById("blank-word").innerHTML = validGuesses.join(" ");
+        document.getElementById('wins').innerHTML = counterWins++;
+        alert("You won!! " + "The word is " + randomWord);
         beganGame();
+
     }
     else if(remainingGuesses === 0){
         document.getElementById('losses').innerHTML  = counterLosses ++;
-        document.getElementById('invalid-guess').innerHTML = "";
+        document.getElementById('invalid-guesses').innerHTML = "";
         alert("Sorry, You Lost. Try it Again");        
         beganGame();
     }
@@ -144,6 +146,21 @@ document.onkeyup = function(event){
 }  
 //Reset the game
       $("#clear").on("click", function() {
+        //clear variables
+          var letterPressed  = " ";
+         allowedGuesses = 0;
+         remainingGuesses = 0;
+         counterLosses = 0;
+         counterWins = 0;
+         counterGuesses = 0;
+         blanks = 0;
+
+         invalidGuesses = [];
+         validGuesses = [];
+         wordLetters =[];          
+         wordSpaces = [];
+         randomWord = [];
+
         beganGame();
 
        

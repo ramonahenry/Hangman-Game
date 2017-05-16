@@ -1,7 +1,44 @@
 
   body {
-    background-image: url(../images/brickwall.png);
+    background-image: url(../images/diamond_upholstery.png);
     
+
+    
+  }
+
+  img{
+    
+    width: 300px;
+    margin-right: 20px;
+
+  }
+  #blank-word{
+    font-size: 32px;
+    font-color: red;
+
+  }
+  #allowed-guess{
+    font-size: 20px;
+
+  }
+  #wins{
+    font-size: 20px;
+
+  }
+  #losses{
+    font-size: 20px;
+
+  }
+
+
+  hr{
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: ridge;
+    border-width: 3px;
   }
 
   .chosen-letters{
@@ -12,10 +49,21 @@
   }
 
   .jumbotron{
-    color: black;
-  }
+    text-align: center;
+    text-decoration-style: wavy;
+    margin-left:  20px;
+   } 
+
+.right-side{
+  text-align: center;
+}
+
  
-  
+ #left-side-word{
+    border-style: solid;
+    text-align: center;
+    
+ } 
   .letter {
     width: 30px;
     height: 30px;
@@ -50,4 +98,8 @@
     color: blue;
     border-style: solid;
     width: 80px;
+  }
+  #invalid-guesses{
+    border-style: inset;
+    border-color: grey;
   }
